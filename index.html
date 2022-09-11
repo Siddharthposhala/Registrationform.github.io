@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    
+    <div class="containsidd">
+         <h1 class="text-3xl text-center font-bold leading-tight">Registration Form</h1><br>
+        <form id="sidd-form">
+          <div class="row">
+            <div class="sidd-25">
+              <label for="name" >Name</label>
+            </div>
+            <div class="sidd-75">
+              <input required type="text" id="name" name="name"
+              style="margin-left:20px"
+              placeholder="Enter Full name"><br><br>
+            </div>
+            <div class="sidd-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="sidd-75">
+              <input required type="email" id="email" name="email" 
+              style="margin-left:20px"
+              placeholder="Enter Email"><br><br>
+            </div>
+            <div class="sidd-25">     
+              <label for="password">Password</label>
+            </div>
+            <div class="sidd-75">
+              <input required type="password" id="password" name="password"
+              style="margin-left:20px"
+              placeholder="Enter Password"><br><br>
+            </div>
+            <div class="sidd-25"> 
+              <label for="dob">Date of Birth</label>
+            </div>
+            <div required class="sidd-75">
+              <input required type="date" id="dob" name="dob"
+              style="margin-left:20px" ><br><br>
+            </div><br>
+            <div style="text-align: left;"> 
+             <label for="acceptTerms">Accept Terms & Conditions</label>
+              <input type="checkbox" id="acceptTerms" name="acceptTerms"
+              style="margin-left:5px"><br><br>
+            </div>
+              <input type="submit" id="submit" style="margin-left:125px" onclick="valdatecondition()">
+          </div>
+        </form>
+      </div>
+    
+      <div class="contain">
+                <h2 class="text-3xl text-center font-bold leading-tight"> Entries</h2><br>
+                <div class="divide-y divide-gray-300/50" id="sidd-ent"></div>
+      </div>
+    <script src="local.js"></script>
+  </body>
+</html>
